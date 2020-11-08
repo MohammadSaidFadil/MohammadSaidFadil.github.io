@@ -8,9 +8,9 @@
 
 /*===== Colores =====*/
 :root{
-  --bg-black-50: #eff0f4;
+  --bg-black-50: #15202B;
   --first-color: #575c69;
-  --second-color: #2e3831be;
+  --second-color: #FFF;
   --outer-shadow: 3px 3px 3px #d0d0d0, -3 -3 3px #f8f8f8;
   --outer-shadow-0: 0 0 0 #d0d0d0, 0 0 0 #f8f8f8;
   --inner-shadow: inset  3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
@@ -187,7 +187,7 @@ img{
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--bg-black-50);
+  background-color: #111921;
   box-shadow: 0 1px 4px rgba(146,161,176,.15);
 }
 .nav__logo{
@@ -219,9 +219,7 @@ img{
   align-items: center;
   font-weight: var(--font-semi);
 }
-.nav__menu {
-  text-align: center;
-}
+
 @media screen and (max-width: 768px){
   .nav__menu{
     position: fixed;
@@ -230,8 +228,9 @@ img{
     width: 80%;
     height: 100%;
     padding: 2rem;
-    background-color: var(--second-color);
+    background-color: var(--bg-black-50);
     transition: .5s;
+    text-align: center;
   }
 }
 .nav__item{
@@ -350,7 +349,7 @@ img{
   border-radius: .5rem;
 }
 .button:hover{
-  box-shadow: 0 10px 36px rgba(0,0,0,.15);
+  box-shadow: 0 10px 36px rgba(0,0,0,.7);
 }
 
 /* ===== ABOUT =====*/
@@ -449,7 +448,7 @@ img{
   font-weight: var(--font-semi);
   padding: 1rem;
   border-radius: .5rem;
-  border: 1.5px solid var(--second-color);
+  border: 1.5px solid var(--first-color);
   outline: none;
   margin-bottom: var(--mb-4);
 }
@@ -464,8 +463,8 @@ img{
 
 /* ===== FOOTER =====*/
 .footer{
-  background-color: var(--second-color);
-  color: #fff;
+  background-color: #111921;
+  color: var(--first-color);
   text-align: center;
   font-weight: var(--font-semi);
   padding: 2rem 0;
